@@ -65,26 +65,26 @@
             <h2 class="text-white">projects</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-2">
                 <div class="col">
-                <div class="card text-white bg-secondary">
-                    <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Game Show App</h5>
-                        <p class="card-text">Browser version of "Wheel of Success", which is a word guessing game where
-                            the player will click the letters from the onscreen keyboard or by pressing the keys on their
-                            keyboards to try and guess a random phrase</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Functions</li>
-                        </ul>
+                    <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#gameShowAppModal">
+                        <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Show App</h5>
+                            <p class="card-text">Browser version of "Wheel of Success", which is a word guessing game where
+                                the player will click the letters from the onscreen keyboard or by pressing the keys on their
+                                keyboards to try and guess a random phrase</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                                <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                                <li class="list-group-item list-group-item-action list-group-item-dark">Functions</li>
+                            </ul>
+                            </div>
+                        <div class="card-footer">
+                            <div class="btn-group d-flex justify-content-center">
+                                <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
+                                <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>    
+                            </div>
                         </div>
-                    <div class="card-footer">
-                        <div class="btn-group d-flex justify-content-center">
-                            <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
-                            <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>    
-                        </div>
-                    </div>
-                </div>
+                    </div>        
             </div>
             <div class="col">
                 <div class="card text-white bg-secondary">
@@ -223,6 +223,32 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
           </div>
+          <!-- Modals -->
+          <div class="modal fade" id="gameShowAppModal" tabindex="-1" aria-labelledby="gameShowAppModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="gameShowAppModalLabel">Game Show App</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
+                    <p class="card-text">Browser version of "Wheel of Success", which is a word guessing game where
+                        the player will click the letters from the onscreen keyboard or by pressing the keys on their
+                        keyboards to try and guess a random phrase</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Functions</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>    
+                    </div>
+                </div>
+              </div>
+            </div>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
