@@ -87,7 +87,7 @@
                     </div>        
             </div>
             <div class="col">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#webAppModal">
                     <img src="images/webapp-dashboard.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">WebApp Dashboard</h5>
@@ -109,7 +109,7 @@
             </div>
             </div>
             <div class="col">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#apiModal">
                     <img src="images/api-to-create-employee-directory.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">API to Create Employee Directory</h5>
@@ -134,7 +134,7 @@
             </div>
             </div>
             <div class="col">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#photoGalleryModal">
                     <img src="images/interactive-photo-gallery.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Interactive Photo Gallery</h5>
@@ -158,7 +158,7 @@
             </div>
             </div>
             <div class="col">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#webStyleModal">
                     <img src="images/web-style-guide.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Web Style Guide</h5>
@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#registrationModal">
                     <img src="images/online-registration.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Online Registration Form</h5>
@@ -249,6 +249,139 @@
                 </div>
               </div>
             </div>
+            <div class="modal fade" id="webAppModal" tabindex="-1" aria-labelledby="webAppModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="webAppModalLabel">WebApp Dashboard</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/webapp-dashboard.png" class="card-img-top" alt="...">
+                        <p class="card-text">A web dashboard complete with charts and graphs. This acts as
+                            control panel for web apps as it shows multiple stats regards the users using it</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript-driven charts and graphs</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Local Storage</li>
+                        </ul>
+                        </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/webapp-dashboard" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/webapp-dashboard/" role="button">Live View</a>    
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="apiModalLabel">API to Create Employee Directory</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/api-to-create-employee-directory.png" class="card-img-top" alt="...">
+                        <p class="card-text">With the use of the Random User Generator API to grab the information for 
+                            12 random "employees", a prototype for an employee directory has been created with a search 
+                            functionality to make finding employees easier and modals to give more information regarding the 
+                            employee</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">API</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Modal</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Filter Function</li>
+                        </ul>
+                            </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/api-to-create-employeee-directory" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/api-to-create-employeee-directory/" role="button">Live View</a>    
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="photoGalleryModal" tabindex="-1" aria-labelledby="photoGalleryModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="photoGalleryModalLabel">Interactive Photo Gallery</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/interactive-photo-gallery.png" class="card-img-top" alt="...">
+                        <p class="card-text">An interactive photo gallery created with JS and CSS Grid. Search area located at top 
+                            of the page will hide photos based on user input. When user clicks on a thumbnail, the photo will be
+                            displayed in a lightbox with arrow allowing to cycle though photos
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Plugins</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">CSS Grid</li>
+                        </ul>
+                                </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/interactive-photo-gallery" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/interactive-photo-gallery/" role="button">Live View</a>    
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="webStyleModal" tabindex="-1" aria-labelledby="webStyleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="webStyleModalLabel">Web Style Guide</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/web-style-guide.png" class="card-img-top" alt="...">
+                        <p class="card-text">After I was given a HTML and CSS file, I converted the CSS the SASS. I split
+                            the code into several partials, stored repeated values into a variable, list or map as well as using
+                             SASS functions 
+                       </p>
+                       <ul class="list-group list-group-flush">
+                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS</li>
+                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS At-Rules</li>
+                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS Functions</li>
+                       </ul>
+                               </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/web-style-guide" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/web-style-guide/" role="button">Live View</a>    
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="registrationModalLabel">Web Style Guide</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/online-registration.png" class="card-img-top" alt="...">
+                        <p class="card-text">A responsive online registration form created with a mobile first approach using
+                            a variety of HTML form input types and attributes.
+                       </p>
+                       <ul class="list-group list-group-flush">
+                           <li class="list-group-item list-group-item-action list-group-item-dark">HTML</li>
+                           <li class="list-group-item list-group-item-action list-group-item-dark">CSS</li>
+                           <li class="list-group-item list-group-item-action list-group-item-dark">Mobile First Approach</li>
+                           <li class="list-group-item list-group-item-action list-group-item-dark">HTML Form</li>
+                       </ul>
+                              </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href="https://github.com/Stelkooo/online-registration" role="button">GitHub</a>
+                        <a class="btn btn-info" href="https://stelkooo.github.io/online-registration/" role="button">Live View</a>    
+                </div>
+                    </div>
+                  </div>
+            </div>
+
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
