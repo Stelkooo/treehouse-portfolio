@@ -1,181 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>stelko</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <style>
-            .btn-primary {
-                background-color: blueviolet;
-                border-color: blueviolet;
-            }
-            .btn-primary:hover {
-                background-color: black;
-                border-color: blueviolet;
-            }
-            .btn-info {
-                background-color: whitesmoke;
-                border-color: blueviolet;
-            }
-            .btn-info:hover {
-                background-color: black;
-                border-color: blueviolet;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Header Nav Bar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">stelko</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stelko</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .btn-primary {
+            background-color: blueviolet;
+            border-color: blueviolet;
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: blueviolet;
+        }
+
+        .btn-info {
+            background-color: whitesmoke;
+            border-color: blueviolet;
+        }
+
+        .btn-info:hover {
+            background-color: black;
+            border-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">stelko</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about-me">about me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact-me">contact me</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about-me">about me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">contact me</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-          <!-- About me -->
-          <div class="text-center p-3" id="about-me">
-              <div class="about-me-text">
-                <h1>Stilyan <span class="text-muted">"Stelko"</span> Toskov</h1>
-                <h2><span class="text-muted">IT Support </span>Turning Web Developer</h2>
-                <p>Hi! While working in IT Support I stumbled across PowerShell and now I am trying to incorporate it in everyday tasks.</p>
-                <p>The problem solving and figuring out how to put something together makes scripting enjoyable while keeping me thinking what else I could use it for.</p>
-                <p>That is why I am looking into make a career change to Web Developer</p>
-              </div>
-          </div>
-          <!-- Projects -->
-          <div class="bg-dark p-2" id="projects">
-            <h2 class="text-white">projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-2">
-                <div class="col">
-                    <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#gameShowAppModal">
-                        <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Game Show App</h5>
-                            <p class="card-text">Browser version of "Wheel of Success", which is a word guessing game where
-                                the player will click the letters from the onscreen keyboard or by pressing the keys on their
-                                keyboards to try and guess a random phrase</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                                <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                                <li class="list-group-item list-group-item-action list-group-item-dark">Functions</li>
-                            </ul>
-                            </div>
-                        <div class="card-footer">
-                            <div class="btn-group d-flex justify-content-center">
-                                <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
-                                <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>    
-                            </div>
+        </div>
+    </nav>
+    <!-- About me -->
+    <div class="text-center p-3" id="about-me">
+        <div class="about-me-text">
+            <h1>Stilyan <span class="text-muted">"Stelko"</span> Toskov</h1>
+            <h2><span class="text-muted">IT Support </span>Turning Web Developer</h2>
+            <p>Hi! While working in IT Support I stumbled across PowerShell and now I am trying to incorporate it in
+                everyday tasks.</p>
+            <p>The problem solving and figuring out how to put something together makes scripting enjoyable while
+                keeping me thinking what else I could use it for.</p>
+            <p>That is why I am looking into make a career change to Web Developer</p>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div class="bg-dark p-2" id="projects">
+        <h2 class="text-white">projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-2">
+            <div class="col">
+                <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#gameShowAppModal">
+                    <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Game Show App</h5>
+                        <p class="card-text">Browser version of "Wheel of Success", which is a word guessing game where
+                            the player will click the letters from the onscreen keyboard or by pressing the keys on
+                            their
+                            keyboards to try and guess a random phrase</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Functions</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn-group d-flex justify-content-center">
+                            <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live
+                                View</a>
                         </div>
-                    </div>        
+                    </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#webAppModal">
                     <img src="images/webapp-dashboard.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">WebApp Dashboard</h5>
-                    <p class="card-text">A web dashboard complete with charts and graphs. This acts as
-                        control panel for web apps as it shows multiple stats regards the users using it</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript-driven charts and graphs</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">Local Storage</li>
-                    </ul>
+                    <div class="card-body">
+                        <h5 class="card-title">WebApp Dashboard</h5>
+                        <p class="card-text">A web dashboard complete with charts and graphs. This acts as
+                            control panel for web apps as it shows multiple stats regards the users using it</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript-driven
+                                charts and graphs</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Local Storage</li>
+                        </ul>
                     </div>
-                <div class="card-footer">
-                    <div class="btn-group d-flex justify-content-center">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/webapp-dashboard" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/webapp-dashboard/" role="button">Live View</a>    
+                    <div class="card-footer">
+                        <div class="btn-group d-flex justify-content-center">
+                            <a class="btn btn-primary" href="https://github.com/Stelkooo/webapp-dashboard"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/webapp-dashboard/"
+                                role="button">Live View</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="col">
                 <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#apiModal">
                     <img src="images/api-to-create-employee-directory.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">API to Create Employee Directory</h5>
-                    <p class="card-text">With the use of the Random User Generator API to grab the information for 
-                        12 random "employees", a prototype for an employee directory has been created with a search 
-                        functionality to make finding employees easier and modals to give more information regarding the 
-                        employee</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">API</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">Modal</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">Filter Function</li>
-                    </ul>
+                    <div class="card-body">
+                        <h5 class="card-title">API to Create Employee Directory</h5>
+                        <p class="card-text">With the use of the Random User Generator API to grab the information for
+                            12 random "employees", a prototype for an employee directory has been created with a search
+                            functionality to make finding employees easier and modals to give more information regarding
+                            the
+                            employee</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">API</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Modal</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Filter Function</li>
+                        </ul>
                     </div>
-                <div class="card-footer">
-                    <div class="btn-group d-flex justify-content-center">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/api-to-create-employeee-directory" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/api-to-create-employeee-directory/" role="button">Live View</a>    
+                    <div class="card-footer">
+                        <div class="btn-group d-flex justify-content-center">
+                            <a class="btn btn-primary"
+                                href="https://github.com/Stelkooo/api-to-create-employeee-directory"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/api-to-create-employeee-directory/"
+                                role="button">Live View</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="col">
                 <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#photoGalleryModal">
                     <img src="images/interactive-photo-gallery.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Interactive Photo Gallery</h5>
-                    <p class="card-text">An interactive photo gallery created with JS and CSS Grid. Search area located at top 
-                        of the page will hide photos based on user input. When user clicks on a thumbnail, the photo will be
-                        displayed in a lightbox with arrow allowing to cycle though photos
-                    </p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">Plugins</li>
-                        <li class="list-group-item list-group-item-action list-group-item-dark">CSS Grid</li>
-                    </ul>
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Photo Gallery</h5>
+                        <p class="card-text">An interactive photo gallery created with JS and CSS Grid. Search area
+                            located at top
+                            of the page will hide photos based on user input. When user clicks on a thumbnail, the photo
+                            will be
+                            displayed in a lightbox with arrow allowing to cycle though photos
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Plugins</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">CSS Grid</li>
+                        </ul>
                     </div>
-                <div class="card-footer">
-                    <div class="btn-group d-flex justify-content-center">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/interactive-photo-gallery" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/interactive-photo-gallery/" role="button">Live View</a>    
+                    <div class="card-footer">
+                        <div class="btn-group d-flex justify-content-center">
+                            <a class="btn btn-primary" href="https://github.com/Stelkooo/interactive-photo-gallery"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/interactive-photo-gallery/"
+                                role="button">Live View</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="col">
                 <div class="card text-white bg-secondary" data-bs-toggle="modal" data-bs-target="#webStyleModal">
                     <img src="images/web-style-guide.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Web Style Guide</h5>
-                        <p class="card-text">After I was given a HTML and CSS file, I converted the CSS the SASS. I split
-                             the code into several partials, stored repeated values into a variable, list or map as well as using
-                              SASS functions 
+                        <p class="card-text">After I was given a HTML and CSS file, I converted the CSS the SASS. I
+                            split
+                            the code into several partials, stored repeated values into a variable, list or map as well
+                            as using
+                            SASS functions
                         </p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-action list-group-item-dark">SASS</li>
                             <li class="list-group-item list-group-item-action list-group-item-dark">SASS At-Rules</li>
                             <li class="list-group-item list-group-item-action list-group-item-dark">SASS Functions</li>
                         </ul>
-                        </div>
+                    </div>
                     <div class="card-footer">
                         <div class="btn-group d-flex justify-content-center">
-                            <a class="btn btn-primary" href="https://github.com/Stelkooo/web-style-guide" role="button">GitHub</a>
-                            <a class="btn btn-info" href="https://stelkooo.github.io/web-style-guide/" role="button">Live View</a>    
+                            <a class="btn btn-primary" href="https://github.com/Stelkooo/web-style-guide"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/web-style-guide/"
+                                role="button">Live View</a>
                         </div>
                     </div>
                 </div>
@@ -185,51 +212,63 @@
                     <img src="images/online-registration.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Online Registration Form</h5>
-                        <p class="card-text">A responsive online registration form created with a mobile first approach using
-                             a variety of HTML form input types and attributes.
+                        <p class="card-text">A responsive online registration form created with a mobile first approach
+                            using
+                            a variety of HTML form input types and attributes.
                         </p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item list-group-item-action list-group-item-dark">HTML</li>
                             <li class="list-group-item list-group-item-action list-group-item-dark">CSS</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Mobile First Approach</li>
+                            <li class="list-group-item list-group-item-action list-group-item-dark">Mobile First
+                                Approach</li>
                             <li class="list-group-item list-group-item-action list-group-item-dark">HTML Form</li>
                         </ul>
-                        </div>
+                    </div>
                     <div class="card-footer">
                         <div class="btn-group d-flex justify-content-center">
-                            <a class="btn btn-primary" href="https://github.com/Stelkooo/online-registration" role="button">GitHub</a>
-                            <a class="btn btn-info" href="https://stelkooo.github.io/online-registration/" role="button">Live View</a>    
+                            <a class="btn btn-primary" href="https://github.com/Stelkooo/online-registration"
+                                role="button">GitHub</a>
+                            <a class="btn btn-info" href="https://stelkooo.github.io/online-registration/"
+                                role="button">Live View</a>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-          </div>
-          <!-- Contact Me -->
-          <div class="p-2 text-center" id="contact-me">
-              <h2>contact me</h2>
-                <p>If you appreciate my work and are looking for a Front End Web Developer, I am currently seeking opportunities.
-                     Please feel free to contact me via Email or through Linkedin
-                </p>
-                <h3>email</h3>
-                <a href="mailto:stelko@stelko.xyz">
-                    <p>stelko@stelko.xyz</p>
-                </a>
-                <h3>socials</h3>
-                <a href="https://github.com/Stelkooo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/stilyan-toskov-102187236/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-          </div>
-          <!-- Modals -->
-          <div class="modal fade" id="gameShowAppModal" tabindex="-1" aria-labelledby="gameShowAppModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
+        </div>
+    </div>
+    <!-- Contact Me -->
+    <div class="p-2 text-center" id="contact-me">
+        <h2>contact me</h2>
+        <p>If you appreciate my work and are looking for a Front End Web Developer, I am currently seeking
+            opportunities.
+            Please feel free to contact me via Email or through Linkedin
+        </p>
+        <h3>email</h3>
+        <a href="mailto:stelko@stelko.xyz">
+            <p>stelko@stelko.xyz</p>
+        </a>
+        <h3>socials</h3>
+        <a href="https://github.com/Stelkooo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/stilyan-toskov-102187236/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+        </a>
+    </div>
+    <!-- Modals -->
+    <div class="modal fade" id="gameShowAppModal" tabindex="-1" aria-labelledby="gameShowAppModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="gameShowAppModalLabel">Game Show App</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="gameShowAppModalLabel">Game Show App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="images/wheel-of-success.png" class="card-img-top" alt="...">
@@ -243,146 +282,167 @@
                     </ul>
                 </div>
                 <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>    
-                    </div>
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/game-show-app" role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/game-show-app/" role="button">Live View</a>
                 </div>
-              </div>
             </div>
-            <div class="modal fade" id="webAppModal" tabindex="-1" aria-labelledby="webAppModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="webAppModalLabel">WebApp Dashboard</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/webapp-dashboard.png" class="card-img-top" alt="...">
-                        <p class="card-text">A web dashboard complete with charts and graphs. This acts as
-                            control panel for web apps as it shows multiple stats regards the users using it</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript-driven charts and graphs</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Local Storage</li>
-                        </ul>
-                        </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/webapp-dashboard" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/webapp-dashboard/" role="button">Live View</a>    
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="apiModalLabel">API to Create Employee Directory</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/api-to-create-employee-directory.png" class="card-img-top" alt="...">
-                        <p class="card-text">With the use of the Random User Generator API to grab the information for 
-                            12 random "employees", a prototype for an employee directory has been created with a search 
-                            functionality to make finding employees easier and modals to give more information regarding the 
-                            employee</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">API</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Modal</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Filter Function</li>
-                        </ul>
-                            </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/api-to-create-employeee-directory" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/api-to-create-employeee-directory/" role="button">Live View</a>    
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="modal fade" id="photoGalleryModal" tabindex="-1" aria-labelledby="photoGalleryModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="photoGalleryModalLabel">Interactive Photo Gallery</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/interactive-photo-gallery.png" class="card-img-top" alt="...">
-                        <p class="card-text">An interactive photo gallery created with JS and CSS Grid. Search area located at top 
-                            of the page will hide photos based on user input. When user clicks on a thumbnail, the photo will be
-                            displayed in a lightbox with arrow allowing to cycle though photos
-                        </p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">Plugins</li>
-                            <li class="list-group-item list-group-item-action list-group-item-dark">CSS Grid</li>
-                        </ul>
-                                </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/interactive-photo-gallery" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/interactive-photo-gallery/" role="button">Live View</a>    
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="modal fade" id="webStyleModal" tabindex="-1" aria-labelledby="webStyleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="webStyleModalLabel">Web Style Guide</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/web-style-guide.png" class="card-img-top" alt="...">
-                        <p class="card-text">After I was given a HTML and CSS file, I converted the CSS the SASS. I split
-                            the code into several partials, stored repeated values into a variable, list or map as well as using
-                             SASS functions 
-                       </p>
-                       <ul class="list-group list-group-flush">
-                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS</li>
-                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS At-Rules</li>
-                           <li class="list-group-item list-group-item-action list-group-item-dark">SASS Functions</li>
-                       </ul>
-                               </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/web-style-guide" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/web-style-guide/" role="button">Live View</a>    
-                    </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="registrationModalLabel">Web Style Guide</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/online-registration.png" class="card-img-top" alt="...">
-                        <p class="card-text">A responsive online registration form created with a mobile first approach using
-                            a variety of HTML form input types and attributes.
-                       </p>
-                       <ul class="list-group list-group-flush">
-                           <li class="list-group-item list-group-item-action list-group-item-dark">HTML</li>
-                           <li class="list-group-item list-group-item-action list-group-item-dark">CSS</li>
-                           <li class="list-group-item list-group-item-action list-group-item-dark">Mobile First Approach</li>
-                           <li class="list-group-item list-group-item-action list-group-item-dark">HTML Form</li>
-                       </ul>
-                              </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-primary" href="https://github.com/Stelkooo/online-registration" role="button">GitHub</a>
-                        <a class="btn btn-info" href="https://stelkooo.github.io/online-registration/" role="button">Live View</a>    
+        </div>
+    </div>
+    <div class="modal fade" id="webAppModal" tabindex="-1" aria-labelledby="webAppModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="webAppModalLabel">WebApp Dashboard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                    </div>
-                  </div>
+                <div class="modal-body">
+                    <img src="images/webapp-dashboard.png" class="card-img-top" alt="...">
+                    <p class="card-text">A web dashboard complete with charts and graphs. This acts as
+                        control panel for web apps as it shows multiple stats regards the users using it</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript-driven charts
+                            and graphs</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Local Storage</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/webapp-dashboard"
+                        role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/webapp-dashboard/" role="button">Live
+                        View</a>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="apiModalLabel">API to Create Employee Directory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/api-to-create-employee-directory.png" class="card-img-top" alt="...">
+                    <p class="card-text">With the use of the Random User Generator API to grab the information for
+                        12 random "employees", a prototype for an employee directory has been created with a search
+                        functionality to make finding employees easier and modals to give more information regarding the
+                        employee</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">API</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Modal</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Filter Function</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/api-to-create-employeee-directory"
+                        role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/api-to-create-employeee-directory/"
+                        role="button">Live View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="photoGalleryModal" tabindex="-1" aria-labelledby="photoGalleryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photoGalleryModalLabel">Interactive Photo Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/interactive-photo-gallery.png" class="card-img-top" alt="...">
+                    <p class="card-text">An interactive photo gallery created with JS and CSS Grid. Search area located
+                        at top
+                        of the page will hide photos based on user input. When user clicks on a thumbnail, the photo
+                        will be
+                        displayed in a lightbox with arrow allowing to cycle though photos
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">JavaScript</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">DOM</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Plugins</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">CSS Grid</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/interactive-photo-gallery"
+                        role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/interactive-photo-gallery/"
+                        role="button">Live View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="webStyleModal" tabindex="-1" aria-labelledby="webStyleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="webStyleModalLabel">Web Style Guide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/web-style-guide.png" class="card-img-top" alt="...">
+                    <p class="card-text">After I was given a HTML and CSS file, I converted the CSS the SASS. I split
+                        the code into several partials, stored repeated values into a variable, list or map as well as
+                        using
+                        SASS functions
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">SASS</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">SASS At-Rules</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">SASS Functions</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/web-style-guide"
+                        role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/web-style-guide/" role="button">Live
+                        View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Web Style Guide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/online-registration.png" class="card-img-top" alt="...">
+                    <p class="card-text">A responsive online registration form created with a mobile first approach
+                        using
+                        a variety of HTML form input types and attributes.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-dark">HTML</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">CSS</li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">Mobile First Approach
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-dark">HTML Form</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://github.com/Stelkooo/online-registration"
+                        role="button">GitHub</a>
+                    <a class="btn btn-info" href="https://stelkooo.github.io/online-registration/" role="button">Live
+                        View</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
